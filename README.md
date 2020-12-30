@@ -1,1 +1,1 @@
-# Music-Player-FrontEnd
+Music Player Frontend with responsive webpage.
