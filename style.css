@@ -194,6 +194,8 @@ section{
 	margin:6px;
 	margin-top:20px;
 	margin-bottom:60px;
+	color:white;
+	text-decoration:none;
 }
 
 .artists-background-image{
@@ -638,5 +640,6 @@ aside{
 		width:500px;
 	}
 }
+
 
 
