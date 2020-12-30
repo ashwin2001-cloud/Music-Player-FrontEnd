@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/jpg" href="music.png"/>
+	<link rel="stylesheet" type="text/css" href="playlist_style.css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<title>Music Player</title>
+</head>
+<body>
+
+	<header>
+
+		<span id="header1">
+			<span>
+				<i class="fas fa-compact-disc" style="font-size:35px; float:left; margin-right:5%;"></i>
+				<span id="music-player">Music Player</span>
+			</span>
+
+			<span>
+				<button type="button" id="favourites-button">Favourites</button>
+			</span>
+		
+		</span>
+
+		<span id="header2">
+			<span>
+				<form style="display:flex;">
+					<input type="text" placeholder="Search">
+					<button type="submit" style="margin-left:-2.4%"><i class="fa fa-search"></i></button>
+				</form>
+			</span>
+
+			<span>
+				<i class="fas fa-bell" style="font-size: 25px;"></i>
+			</span>
+
+			<span>
+				<img src="arijitsingh.png" style="height:50px;border-radius: 50%;">
+			</span>
+		</span>
+		
+
+	</header>
+
+	<main>
+		
+		<section id="song-container">
+
+			<img src="Coldplay.png" style="height:100%;">
+
+			<span id="song-container-right">
+				<span id="song-container-name">
+					<span style="font-size:1.5rem;">ColdPlay</span>
+					<span style="font-size:0.85rem;">851 Followers</span>
+				</span>
+				<div id="band-name">British Band</div>
+				<div id="band-description">ColdPlay is a British music band that has enjoyed continuous success since their inception in 1996 through their intelligent and soulful songs. The band members are Chris Martin (lead vocals), Jenny Buckland (lead guitar), Guy Berryman (bass guitar) and Will Champion (drums).</div>
+
+				<div id="button-container">
+					<span><button type="button" id="playall-button">Play All</button></span>
+					<a href="#" id="follow-link">Follow</a>
+				</div>
+
+				<div id="songs-number">247 Tracks | 128 Albums</div>
+
+			</span>
+			
+		</section>
+
+		<section id="playlist">
+			
+			<div class="playlist-song">
+				<span class="playlist-song-details">
+					<span>01</span>
+					<img src="https://a10.gaanacdn.com/gn_img/albums/9En3pqeWXD/En3p9M58WX/size_m.jpg">
+					<span>
+						<div class="playlist-song-name">Mirage</div>
+						<div class="playlist-song-band">Else</div>
+					</span>
+				</span>
+				
+				<span>04:44</span>
+
+				<span>
+					<span><i class="far fa-heart"></i></span>
+					<span><i class="fas fa-plus"></i></span>
+				</span>
+			</div>
+			<div class="playlist-song">
+				<span class="playlist-song-details">
+					<span>02</span>
+					<img src="https://a10.gaanacdn.com/images/albums/75/59075/crop_175x175_59075.jpg">
+					<span>
+						<div class="playlist-song-name">Paradise</div>
+						<div class="playlist-song-band">Coldplay</div>
+					</span>
+				</span>
+				
+				<span>04:39</span>
+
+				<span>
+					<span><i class="far fa-heart"></i></span>
+					<span><i class="fas fa-plus"></i></span>
+				</span>
+			</div>
+			<div class="playlist-song">
+				<span class="playlist-song-details">
+					<span>03</span>
+					<img src="https://a10.gaanacdn.com/images/albums/8/198508/crop_175x175_198508.jpg">
+					<span style="width:100%;">
+						<div class="playlist-song-name">Stars</div>
+						<div class="playlist-song-band">Coldplay</div>
+					</span>
+				</span>
+				
+				<span>04:28</span>
+
+				<span>
+					<span><i class="far fa-heart"></i></span>
+					<span><i class="fas fa-plus"></i></span>
+				</span>
+			</div>
+			<div class="playlist-song">
+				<span class="playlist-song-details">
+					<span>04</span>
+					<img src="https://a10.gaanacdn.com/images/albums/29/277129/crop_175x175_277129.jpg">
+					<span>
+						<div class="playlist-song-name">Viva La Vida</div>
+						<div class="playlist-song-band">Coldplay</div>
+					</span>
+				</span>
+				
+				<span>04:02</span>
+
+				<span>
+					<span><i class="far fa-heart"></i></span>
+					<span><i class="fas fa-plus"></i></span>
+				</span>
+			</div>
+			<div class="playlist-song">
+				<span class="playlist-song-details">
+					<span>05</span>
+					<img src="https://a10.gaanacdn.com/images/albums/53/1573753/crop_175x175_1573753.jpg">
+					<span>
+						<div class="playlist-song-name">Up&Up</div>
+						<div class="playlist-song-band">Coldplay</div>
+					</span>
+				</span>
+				
+				<span>06:45</span>
+
+				<span>
+					<span><i class="far fa-heart"></i></span>
+					<span><i class="fas fa-plus"></i></span>
+				</span>
+			</div>
+			<div class="playlist-song">
+				<span class="playlist-song-details">
+					<span>06</span>
+					<img src="https://a10.gaanacdn.com/images/albums/53/1573753/crop_175x175_1573753.jpg">
+					<span>
+						<div class="playlist-song-name">Birds</div>
+						<div class="playlist-song-band">Coldplay</div>
+					</span>
+				</span>
+				
+				<span>03:49</span>
+
+				<span>
+					<span><i class="far fa-heart"></i></span>
+					<span><i class="fas fa-plus"></i></span>
+				</span>
+			</div>
+			<div class="playlist-song">
+				<span class="playlist-song-details">
+					<span>07</span>
+					<img src="https://a10.gaanacdn.com/images/albums/90/201390/crop_175x175_201390.jpg">
+					<span>
+						<div class="playlist-song-name">Mylo Xyloto</div>
+						<div class="playlist-song-band">Coldplay</div>
+					</span>
+				</span>
+				
+				<span>00:42</span>
+
+				<span>
+					<span><i class="far fa-heart"></i></span>
+					<span><i class="fas fa-plus"></i></span>
+				</span>
+			</div>
+			<div class="playlist-song">
+				<span class="playlist-song-details">
+					<span>08</span>
+					<img src="https://a10.gaanacdn.com/images/albums/88/1866388/crop_175x175_1866388.jpg">
+					<span>
+						<div class="playlist-song-name">Hypnotised</div>
+						<div class="playlist-song-band">Coldplay</div>
+					</span>
+				</span>
+				
+				<span>05:55</span>
+
+				<span>
+					<span><i class="far fa-heart"></i></span>
+					<span><i class="fas fa-plus"></i></span>
+				</span>
+			</div>
+			<div class="playlist-song">
+				<span class="playlist-song-details">
+					<span>09</span>
+					<img src="https://a10.gaanacdn.com/images/albums/36/1500136/crop_175x175_1500136.jpg">
+					<span>
+						<div class="playlist-song-name">The Scientist</div>
+						<div class="playlist-song-band">Coldplay</div>
+					</span>
+				</span>
+				
+				<span>05:09</span>
+
+				<span>
+					<span><i class="far fa-heart"></i></span>
+					<span><i class="fas fa-plus"></i></span>
+				</span>
+			</div>
+			<div class="playlist-song">
+				<span class="playlist-song-details">
+					<span>10</span>
+					<img src="https://a10.gaanacdn.com/images/albums/13/1817013/crop_175x175_1817013.jpg">
+					<span>
+						<div class="playlist-song-name">Everglow</div>
+						<div class="playlist-song-band">Coldplay</div>
+					</span>
+				</span>
+				
+				<span>04:42</span>
+
+				<span>
+					<span><i class="far fa-heart"></i></span>
+					<span><i class="fas fa-plus"></i></span>
+				</span>
+			</div>
+			<div class="playlist-song">
+				<span class="playlist-song-details">
+					<span>11</span>
+					<img src="https://a10.gaanacdn.com/images/albums/82/262482/crop_175x175_262482.jpg">
+					<span>
+						<div class="playlist-song-name">Ink</div>
+						<div class="playlist-song-band">Coldplay</div>
+					</span>
+				</span>
+				
+				<span>03:48</span>
+
+				<span>
+					<span><i class="far fa-heart"></i></span>
+					<span><i class="fas fa-plus"></i></span>
+				</span>
+			</div>
+			<div class="playlist-song">
+				<span class="playlist-song-details">
+					<span>12</span>
+					<img src="https://a10.gaanacdn.com/images/albums/47/3681847/crop_175x175_3681847.jpg">
+					<span>
+						<div class="playlist-song-name">Flags</div>
+						<div class="playlist-song-band">Coldplay</div>
+					</span>
+				</span>
+				
+				<span>03:36</span>
+
+				<span>
+					<span><i class="far fa-heart"></i></span>
+					<span><i class="fas fa-plus"></i></span>
+				</span>
+			</div>
+			<div class="playlist-song">
+				<span class="playlist-song-details">
+					<span>13</span>
+					<img src="https://a10.gaanacdn.com/images/albums/9/288909/crop_175x175_288909.jpg">
+					<span>
+						<div class="playlist-song-name">Miracles</div>
+						<div class="playlist-song-band">Coldplay</div>
+					</span>
+				</span>
+				
+				<span>03:55</span>
+
+				<span>
+					<span><i class="far fa-heart"></i></span>
+					<span><i class="fas fa-plus"></i></span>
+				</span>
+			</div>
+			
+		</section>
+
+		<section id="similar-artists-responsive">
+
+			<div id="similar-artists-heading">
+				<span>Similar Artists</span>
+				<span style="font-size: 11.4px;">View All</span>
+			</div>
+			
+			 <div class="song">
+				<img src="https://a10.gaanacdn.com/images/albums/60/1667660/crop_175x175_1667660.jpg">
+
+				<span class="song-name">Itni Si Baat Hai</span>
+
+				<span class="dropdown-button-conatiner">
+					<button type="button" class="song-button">
+						<i class="fas fa-ellipsis-h" style="color:white;"></i>
+						<div class="dropdown-content">
+  							<a href="#">Play Now</a>
+    						<a href="#">Add To Queue</a>
+    						<a href="#">Add To Favourites</a>
+    						<a href="#">Get Info</a>
+  						</div>
+					</button>
+			
+					<div style="font-size:10px;">04:54</div>
+				</span>
+
+			</div>
+
+			<div class="song">
+				<img src="https://c.saavncdn.com/769/Nayan-Hindi-2020-20201208051000-500x500.jpg">
+
+				<span class="song-name">Nayan</span>
+
+				<span class="dropdown-button-conatiner">
+					<button type="button" class="song-button">
+						<i class="fas fa-ellipsis-h" style="color:white;"></i>
+						<div class="dropdown-content">
+  							<a href="#">Play Now</a>
+    						<a href="#">Add To Queue</a>
+    						<a href="#">Add To Favourites</a>
+    						<a href="#">Get Info</a>
+  						</div>
+					</button>
+			
+					<div style="font-size:10px;">04:14</div>
+				</span>
+
+			</div>
+
+			<div class="song">
+				<img src="https://a10.gaanacdn.com/images/albums/89/89/crop_175x175_89.jpg">
+
+				<span class="song-name">Main Agar Kahoon</span>
+
+				<span class="dropdown-button-conatiner">
+					<button type="button" class="song-button">
+						<i class="fas fa-ellipsis-h" style="color:white;"></i>
+						<div class="dropdown-content">
+  							<a href="#">Play Now</a>
+    						<a href="#">Add To Queue</a>
+    						<a href="#">Add To Favourites</a>
+    						<a href="#">Get Info</a>
+  						</div>
+					</button>
+			
+					<div style="font-size:10px;">05:08</div>
+				</span>
+
+			</div>
+
+			<div class="song">
+				<img src="https://a10.gaanacdn.com/images/albums/23/1729123/crop_175x175_1729123.jpg">
+
+				<span class="song-name">Dhal Jaun Main</span>
+
+				<span class="dropdown-button-conatiner">
+					<button type="button" class="song-button">
+						<i class="fas fa-ellipsis-h" style="color:white;"></i>
+						<div class="dropdown-content">
+  							<a href="#">Play Now</a>
+    						<a href="#">Add To Queue</a>
+    						<a href="#">Add To Favourites</a>
+    						<a href="#">Get Info</a>
+  						</div>
+					</button>
+			
+					<div style="font-size:10px;">04:53</div>
+				</span>
+
+			</div>
+
+			<div class="song">
+				<img src="https://a10.gaanacdn.com/images/albums/60/60/crop_175x175_1490697102_60.jpg">
+
+				<span class="song-name">Tum Se Hi</span>
+
+				<span class="dropdown-button-conatiner">
+					<button type="button" class="song-button">
+						<i class="fas fa-ellipsis-h" style="color:white;"></i>
+						<div class="dropdown-content">
+  							<a href="#">Play Now</a>
+    						<a href="#">Add To Queue</a>
+    						<a href="#">Add To Favourites</a>
+    						<a href="#">Get Info</a>
+  						</div>
+					</button>
+			
+					<div style="font-size:10px;">05:21</div>
+				</span>
+
+			</div>
+
+			<div class="song">
+				<img src="https://a10.gaanacdn.com/images/albums/57/71357/crop_175x175_71357.jpg">
+
+				<span class="song-name">Chand Sifarish</span>
+
+				<span class="dropdown-button-conatiner">
+					<button type="button" class="song-button">
+						<i class="fas fa-ellipsis-h" style="color:white;"></i>
+						<div class="dropdown-content">
+  							<a href="#">Play Now</a>
+    						<a href="#">Add To Queue</a>
+    						<a href="#">Add To Favourites</a>
+    						<a href="#">Get Info</a>
+  						</div>
+					</button>
+			
+					<div style="font-size:10px;">04:35</div>
+				</span>
+
+			</div>
+
+			<div class="song">
+				<img src="https://a10.gaanacdn.com/images/albums/78/78/crop_175x175_78.jpg">
+
+				<span class="song-name">Main Hoon Na</span>
+
+				<span class="dropdown-button-conatiner">
+					<button type="button" class="song-button">
+						<i class="fas fa-ellipsis-h" style="color:white;"></i>
+						<div class="dropdown-content">
+  							<a href="#">Play Now</a>
+    						<a href="#">Add To Queue</a>
+    						<a href="#">Add To Favourites</a>
+    						<a href="#">Get Info</a>
+  						</div>
+					</button>
+			
+					<div style="font-size:10px;">04:39</div>
+				</span>
+
+			</div>
+
+		</section>
+
+		<section style="height:40px"></section>	
+
+		<section id="recently-played-responsive">
+
+			<div id="recently-played-heading">
+				<span>Recently Played</span>
+				<span style="font-size: 11.4px;">View All</span>
+			</div>
+
+			<div class="recent-song">
+				<span class="recent-song-left">
+					<span class="recent-song-number">01</span>
+					<img src="https://a10.gaanacdn.com/images/albums/75/59075/crop_175x175_59075.jpg">
+					<span>
+						<div class="recent-song-name">Paradise</div>
+						<div class="recent-song-band">Coldplay</div>
+					</span>
+				</span>
+				<span><i class="far fa-heart" style="margin-left:-100%;"></i></span>
+			</div>
+
+			<div class="recent-song">
+				<span class="recent-song-left">
+					<span class="recent-song-number">02</span>
+					<img src="https://a10.gaanacdn.com/images/albums/36/1500136/crop_175x175_1500136.jpg">
+					<span>
+						<div class="recent-song-name">The Scientist</div>
+						<div class="recent-song-band">Coldplay</div>
+					</span>
+				</span>
+				<span><i class="far fa-heart" style="margin-left:-100%;"></i></span>
+			</div>
+
+			<div class="recent-song">
+				<span class="recent-song-left">
+					<span class="recent-song-number">03</span>
+					<img src="https://a10.gaanacdn.com/images/albums/82/262482/crop_175x175_262482.jpg">
+					<span>
+						<div class="recent-song-name">Ink</div>
+						<div class="recent-song-band">Coldplay</div>
+					</span>
+				</span>
+				<span><i class="far fa-heart" style="margin-left:-100%;"></i></span>
+			</div>
+
+			<div class="recent-song">
+				<span class="recent-song-left">
+					<span class="recent-song-number">04</span>
+					<img src="https://a10.gaanacdn.com/images/albums/47/3681847/crop_175x175_3681847.jpg">
+					<span>
+						<div class="recent-song-name">Flags</div>
+						<div class="recent-song-band">Coldplay</div>
+					</span>
+				</span>
+				<span><i class="far fa-heart" style="margin-left:-100%;"></i></span>
+			</div>
+
+			<div class="recent-song">
+				<span class="recent-song-left">
+					<span class="recent-song-number">05</span>
+					<img src="https://a10.gaanacdn.com/images/albums/53/1573753/crop_175x175_1573753.jpg">
+					<span>
+						<div class="recent-song-name">Birds</div>
+						<div class="recent-song-band">Coldplay</div>
+					</span>
+				</span>
+				<span><i class="far fa-heart" style="margin-left:-100%;"></i></span>
+			</div>
+
+			<div class="recent-song">
+				<span class="recent-song-left">
+					<span class="recent-song-number">06</span>
+					<img src="https://a10.gaanacdn.com/images/albums/88/1866388/crop_175x175_1866388.jpg">
+					<span>
+						<div class="recent-song-name">Hypnotised</div>
+						<div class="recent-song-band">Coldplay</div>
+					</span>
+				</span>
+				<span><i class="far fa-heart" style="margin-left:-100%;"></i></span>
+			</div>
+
+			<div class="recent-song">
+				<span class="recent-song-left">
+					<span class="recent-song-number">07</span>
+					<img src="https://a10.gaanacdn.com/images/albums/90/201390/crop_175x175_201390.jpg">
+					<span>
+						<div class="recent-song-name">Mylo Xyloto</div>
+						<div class="recent-song-band">Coldplay</div>
+					</span>
+				</span>
+				<span><i class="far fa-heart" style="margin-left:-100%;"></i></span>
+			</div>
+			
+		</section>
+	</main>
+
+	<aside>
+		<section id="similar-artists">
+			
+			<div id="similar-artists-heading">
+				<span>Similar Artists</span>
+				<span style="font-size: 11.4px;">View All</span>
+			</div>
+			
+			 <div class="song">
+				<img src="https://a10.gaanacdn.com/images/albums/60/1667660/crop_175x175_1667660.jpg">
+
+				<span class="song-name">Itni Si Baat Hai</span>
+
+				<span class="dropdown-button-conatiner">
+					<button type="button" class="song-button"">
+						<i class="fas fa-ellipsis-h" style="color:white;"></i>
+						<div class="dropdown-content">
+  							<a href="#">Play Now</a>
+    						<a href="#">Add To Queue</a>
+    						<a href="#">Add To Favourites</a>
+    						<a href="#">Get Info</a>
+  						</div>
+					</button>
+			
+					<div style="font-size:10px;">04:54</div>
+				</span>
+
+			</div>
+
+			<div class="song">
+				<img src="https://c.saavncdn.com/769/Nayan-Hindi-2020-20201208051000-500x500.jpg">
+
+				<span class="song-name">Nayan</span>
+
+				<span class="dropdown-button-conatiner">
+					<button type="button" class="song-button"">
+						<i class="fas fa-ellipsis-h" style="color:white;"></i>
+						<div class="dropdown-content">
+  							<a href="#">Play Now</a>
+    						<a href="#">Add To Queue</a>
+    						<a href="#">Add To Favourites</a>
+    						<a href="#">Get Info</a>
+  						</div>
+					</button>
+			
+					<div style="font-size:10px;">04:14</div>
+				</span>
+
+			</div>
+
+			<div class="song">
+				<img src="https://a10.gaanacdn.com/images/albums/89/89/crop_175x175_89.jpg">
+
+				<span class="song-name">Main Agar Kahoon</span>
+
+				<span class="dropdown-button-conatiner">
+					<button type="button" class="song-button"">
+						<i class="fas fa-ellipsis-h" style="color:white;"></i>
+						<div class="dropdown-content">
+  							<a href="#">Play Now</a>
+    						<a href="#">Add To Queue</a>
+    						<a href="#">Add To Favourites</a>
+    						<a href="#">Get Info</a>
+  						</div>
+					</button>
+			
+					<div style="font-size:10px;">05:08</div>
+				</span>
+
+			</div>
+
+			<div class="song">
+				<img src="https://a10.gaanacdn.com/images/albums/23/1729123/crop_175x175_1729123.jpg">
+
+				<span class="song-name">Dhal Jaun Main</span>
+
+				<span class="dropdown-button-conatiner">
+					<button type="button" class="song-button"">
+						<i class="fas fa-ellipsis-h" style="color:white;"></i>
+						<div class="dropdown-content">
+  							<a href="#">Play Now</a>
+    						<a href="#">Add To Queue</a>
+    						<a href="#">Add To Favourites</a>
+    						<a href="#">Get Info</a>
+  						</div>
+					</button>
+			
+					<div style="font-size:10px;">04:53</div>
+				</span>
+
+			</div>
+
+			<div class="song">
+				<img src="https://a10.gaanacdn.com/images/albums/60/60/crop_175x175_1490697102_60.jpg">
+
+				<span class="song-name">Tum Se Hi</span>
+
+				<span class="dropdown-button-conatiner">
+					<button type="button" class="song-button"">
+						<i class="fas fa-ellipsis-h" style="color:white;"></i>
+						<div class="dropdown-content">
+  							<a href="#">Play Now</a>
+    						<a href="#">Add To Queue</a>
+    						<a href="#">Add To Favourites</a>
+    						<a href="#">Get Info</a>
+  						</div>
+					</button>
+			
+					<div style="font-size:10px;">05:21</div>
+				</span>
+
+			</div>
+
+			<div class="song">
+				<img src="https://a10.gaanacdn.com/images/albums/57/71357/crop_175x175_71357.jpg">
+
+				<span class="song-name">Chand Sifarish</span>
+
+				<span class="dropdown-button-conatiner">
+					<button type="button" class="song-button"">
+						<i class="fas fa-ellipsis-h" style="color:white;"></i>
+						<div class="dropdown-content">
+  							<a href="#">Play Now</a>
+    						<a href="#">Add To Queue</a>
+    						<a href="#">Add To Favourites</a>
+    						<a href="#">Get Info</a>
+  						</div>
+					</button>
+			
+					<div style="font-size:10px;">04:35</div>
+				</span>
+
+			</div>
+
+			<div class="song">
+				<img src="https://a10.gaanacdn.com/images/albums/78/78/crop_175x175_78.jpg">
+
+				<span class="song-name">Main Hoon Na</span>
+
+				<span class="dropdown-button-conatiner">
+					<button type="button" class="song-button"">
+						<i class="fas fa-ellipsis-h" style="color:white;"></i>
+						<div class="dropdown-content">
+  							<a href="#">Play Now</a>
+    						<a href="#">Add To Queue</a>
+    						<a href="#">Add To Favourites</a>
+    						<a href="#">Get Info</a>
+  						</div>
+					</button>
+			
+					<div style="font-size:10px;">04:39</div>
+				</span>
+
+			</div>
+
+		</section>
+
+		<section id="recently-played">
+
+			<div id="recently-played-heading">
+				<span>Recently Played</span>
+				<span style="font-size: 11.4px;">View All</span>
+			</div>
+
+			<div class="recent-song">
+				<span class="recent-song-details">
+					<span class="recent-song-number">01</span>
+					<img src="https://a10.gaanacdn.com/images/albums/75/59075/crop_175x175_59075.jpg">
+					<span>
+						<div class="recent-song-name">Paradise</div>
+						<div class="recent-song-band">Coldplay</div>
+					</span>
+				</span>
+				<span><i class="far fa-heart" style="margin-left:-100%;"></i></span>
+			</div>
+
+			<div class="recent-song">
+				<span class="recent-song-details">
+					<span class="recent-song-number">02</span>
+					<img src="https://a10.gaanacdn.com/images/albums/36/1500136/crop_175x175_1500136.jpg">
+					<span>
+						<div class="recent-song-name">The Scientist</div>
+						<div class="recent-song-band">Coldplay</div>
+					</span>
+				</span>
+				<span><i class="far fa-heart" style="margin-left:-100%;"></i></span>
+			</div>
+
+			<div class="recent-song">
+				<span class="recent-song-details">
+					<span class="recent-song-number">03</span>
+					<img src="https://a10.gaanacdn.com/images/albums/82/262482/crop_175x175_262482.jpg">
+					<span>
+						<div class="recent-song-name">Ink</div>
+						<div class="recent-song-band">Coldplay</div>
+					</span>
+				</span>
+				<span><i class="far fa-heart" style="margin-left:-100%;"></i></span>
+			</div>
+
+			<div class="recent-song">
+				<span class="recent-song-details">
+					<span class="recent-song-number">04</span>
+					<img src="https://a10.gaanacdn.com/images/albums/47/3681847/crop_175x175_3681847.jpg">
+					<span>
+						<div class="recent-song-name">Flags</div>
+						<div class="recent-song-band">Coldplay</div>
+					</span>
+				</span>
+				<span><i class="far fa-heart" style="margin-left:-100%;"></i></span>
+			</div>
+
+			<div class="recent-song">
+				<span class="recent-song-details">
+					<span class="recent-song-number">05</span>
+					<img src="https://a10.gaanacdn.com/images/albums/53/1573753/crop_175x175_1573753.jpg">
+					<span>
+						<div class="recent-song-name">Birds</div>
+						<div class="recent-song-band">Coldplay</div>
+					</span>
+				</span>
+				<span><i class="far fa-heart" style="margin-left:-100%;"></i></span>
+			</div>
+
+			<div class="recent-song">
+				<span class="recent-song-details">
+					<span class="recent-song-number">06</span>
+					<img src="https://a10.gaanacdn.com/images/albums/88/1866388/crop_175x175_1866388.jpg">
+					<span>
+						<div class="recent-song-name">Hypnotised</div>
+						<div class="recent-song-band">Coldplay</div>
+					</span>
+				</span>
+				<span><i class="far fa-heart" style="margin-left:-100%;"></i></span>
+			</div>
+
+			<div class="recent-song">
+				<span class="recent-song-details">
+					<span class="recent-song-number">07</span>
+					<img src="https://a10.gaanacdn.com/images/albums/90/201390/crop_175x175_201390.jpg">
+					<span>
+						<div class="recent-song-name">Mylo Xyloto</div>
+						<div class="recent-song-band">Coldplay</div>
+					</span>
+				</span>
+				<span><i class="far fa-heart" style="margin-left:-100%;"></i></span>
+			</div>
+			
+		</section>
+	</aside>
+
+	<footer id="music-playbar">
+
+		<div id="music-playbar-1">
+			
+			<img src="https://a10.gaanacdn.com/images/albums/78/78/crop_175x175_78.jpg" style="height: 80%;">
+			<span>
+				<div id="music-playbar-songname">Main Hoon Naa</div>
+				<div id="music-playbar-singer">Sonu Nigam</div>
+			</span>
+
+			<span><i class="far fa-heart" id="heart"></i></span>
+			<span><i class="fas fa-ban" id="ban"></i></span>
+		</div>	
+
+		<div id="music-playbar-2">
+			
+			<div id="buttons" style="display:flex;">
+                <i class="fas fa-step-backward" class="fifteen-px"></i>
+                <i class="fas fa-pause-circle" class="fifteen-px"></i>
+                <i class="fas fa-step-forward" class="fifteen-px"></i>
+			</div>
+
+			<div id="timeline">
+				<span class="timeline-time">0:00</span>
+				<input type="range">
+				<span class="timeline-time">4:32</span>
+			</div>
+		</div>
+
+		<div id="music-playbar-3">
+			<input type="range">
+			<i class="fas fa-volume-up" class="forteen-px"></i>
+			<i class="fas fa-laptop" class="forteen-px"></i>
+			<i class="fas fa-list-ul" class="forteen-px"></i>
+		</div>
+
+	</footer>
+
+
+</body>
+</html>

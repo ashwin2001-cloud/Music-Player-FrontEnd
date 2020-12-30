@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/jpg" href="music.png"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<title>Music Player</title>
+</head>
+<body>
+
+	<header>
+
+		<span id="header1">
+			<span>
+				<i class="fas fa-compact-disc" style="font-size:35px; float:left; margin-right:5%;"></i>
+				<span id="music-player">Music Player</span>
+			</span>
+
+			<span>
+				<button type="button" id="favourites-button">Favourites</button>
+			</span>
+		
+		</span>
+
+		<span id="header2">
+			<span>
+				<form style="display:flex;">
+					<input type="text" placeholder="Search">
+					<button type="submit" style="margin-left:-2.4%"><i class="fa fa-search"></i></button>
+				</form>
+			</span>
+
+			<span>
+				<i class="fas fa-bell" style="font-size: 25px;"></i>
+			</span>
+
+			<span>
+				<img src="arijitsingh.png" style="height:50px;border-radius: 50%;">
+			</span>
+		</span>
+		
+
+	</header>
+
+	<main>
+
+		<section id="moods">
+
+			<!-- salsa image -->
+			<button type="button"><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/a7LWBaz3zX/LWBjBeeDWz/size_m_1524627838.jpg" style="opacity: 1;"></button>
+			
+			<button><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/6Zxb27K9wN/Zxb2oDa7K9/size_m_1515142205.jpg" style="opacity:1;"></button>
+			
+			<button><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/YoEWlwa3zX/EWloDqRg3z/size_m_1563444702.jpg" style="opacity: 1;"></button>
+
+			<button><img src="https://a10.gaanacdn.com/gn_pl_img/playlists/81l3Me3rMx/1l3Mwn9ebr/size_m_1515072406.jpg" style="opacity: 1;"></button>
+		</section>
+
+		<section id="latest-release">
+
+			<h4 style="margin-bottom:40px;">Latest Releases</h4>
+
+			<div id="latest-release-container">
+
+				<div class="song">
+					<img src="https://a10.gaanacdn.com/images/albums/1/3572601/crop_175x175_1608633799_3572601.jpg">
+
+					<span class="song-name">Coolie No. 1 - Title Track</span>
+
+					<span class="button-container">
+						<button type="button" class="song-button">
+							<i class="fas fa-ellipsis-h" style="color:white;"></i>
+							<div class="dropdown-content">
+  								<a href="#">Play Now</a>
+    							<a href="#">Add To Queue</a>
+    							<a href="#">Add To Favourites</a>
+    							<a href="#">Get Info</a>
+  							</div>
+						</button>
+			
+						<div>02:08</div>
+					</span>
+
+				</div>
+
+				<div class="song">
+					<img src="https://c.saavncdn.com/589/Nachunga-Aise-Hindi-2020-20201224081001-500x500.jpg">
+
+					<span class="song-name">Nachunga Aise</span>
+
+					<span class="button-container">
+						<button type="button" class="song-button">
+							<i class="fas fa-ellipsis-h" style="color:white;"></i>
+							<div class="dropdown-content">
+  								<a href="#">Play Now</a>
+    							<a href="#">Add To Queue</a>
+    							<a href="#">Add To Favourites</a>
+    							<a href="#">Get Info</a>
+  							</div>
+						</button>
+			
+						<div>02:58</div>
+					</span>
+
+				</div>
+
+				<div class="song">
+					<img src="https://c.saavncdn.com/032/Veham-Hindi-2020-20201214051001-500x500.jpg">
+
+					<span class="song-name">Veham</span>
+
+					<span class="button-container">
+						<button type="button" class="song-button">
+							<i class="fas fa-ellipsis-h" style="color:white;"></i>
+							<div class="dropdown-content">
+  								<a href="#">Play Now</a>
+    							<a href="#">Add To Queue</a>
+    							<a href="#">Add To Favourites</a>
+    							<a href="#">Get Info</a>
+  							</div>
+						</button>
+			
+						<div>05:14</div>
+					</span>
+
+				</div>
+
+				<div class="song">
+					<img src="https://c.saavncdn.com/769/Nayan-Hindi-2020-20201208051000-500x500.jpg">
+
+					<span class="song-name">Nayan</span>
+
+					<span class="button-container">
+						<button type="button" class="song-button">
+							<i class="fas fa-ellipsis-h" style="color:white;"></i>
+							<div class="dropdown-content">
+  								<a href="#">Play Now</a>
+    							<a href="#">Add To Queue</a>
+    							<a href="#">Add To Favourites</a>
+    							<a href="#">Get Info</a>
+  							</div>
+						</button>
+			
+						<div>04:14</div>
+					</span>
+
+				</div>
+
+			</div>
+
+			
+
+		</section>
+
+		<section id="popular-artists-container">
+
+			<h4 style="margin-bottom:40px;">Popular Artists</h4>
+
+			<div style="display:flex; flex-wrap: wrap;">
+				<span class="artists">
+					<div class="artists-background-image">
+						
+					</div>
+					<img src="https://c.saavncdn.com/artists/Neha_Kakkar_006_20200822042626_150x150.jpg" class="artist-image">
+					<p class="artist-name">Neha Kakkar</p>
+
+				</span>
+
+				<span class="artists">
+					<div class="artists-background-image">
+						
+					</div>
+					<img src="https://c.saavncdn.com/artists/Atif_Aslam_150x150.jpg" class="artist-image">
+					<p class="artist-name">Atif Aslam</p>
+				</span>
+
+				<span class="artists">
+					<div class="artists-background-image">
+						
+					</div>
+					<img src="https://c.saavncdn.com/artists/Yo_Yo_Honey_Singh_150x150.jpg" class="artist-image">
+					<p class="artist-name">Honey Singh</p>
+				</span>
+
+				<span class="artists">
+					<div class="artists-background-image">
+						
+					</div>
+					<img src="https://c.saavncdn.com/artists/Arijit_Singh_150x150.jpg" class="artist-image">
+					<p class="artist-name">Arijit Singh</p>
+				</span>
+
+				<span class="artists">
+					<div class="artists-background-image">
+						
+					</div>
+					<img src="https://c.saavncdn.com/artists/Kishore_Kumar_150x150.jpg" class="artist-image">
+					<p class="artist-name">Kishore Kumar</p>
+				</span>
+
+				<span class="artists">
+					<div class="artists-background-image">
+						
+					</div>
+					<img src="https://c.saavncdn.com/artists/Guru_Randhawa_150x150.jpg" class="artist-image">
+					<p class="artist-name">Guru Randhawa</p>
+				</span>
+
+			</div>
+		</section>
+
+		<section id="stations">
+			<img src="MusicStation.png" style="height:180px">
+			<i class="fas fa-arrow-right" style="font-size:40px;"></i>
+
+			<span id="stations-container">
+
+				<span>
+					<a href="#" class="station-icon"><img src="https://c.saavncdn.com/editorial/Workout_saavn_radio_20201012131725_150x150.jpg"></a>
+					<div class="text-center">Workout</div>
+					<!-- <p class="text-center">Workout</p> -->
+				</span>
+
+				<span>
+					<a href="#" class="station-icon"><img src="https://c.saavncdn.com/editorial/MadhurKirtan_saavn_radio_20201215120716_150x150.jpg"></a>
+					<div class="text-center">Madhur Kirtan</div>
+					<!-- <p class="text-center">Madhur Kirtan</p> -->
+				</span>
+				
+				<span>
+					<a href="#" class="station-icon"><img src="https://c.saavncdn.com/editorial/LoveNotes_saavn_radio_20201012125415_150x150.jpg"></a>
+					<div class="text-center">Love Notes</div>
+					<!-- <p class="text-center">Love Notes</p> -->
+				</span>
+				
+				<span>
+					<a href="#" class="station-icon"><img src="https://c.saavncdn.com/editorial/FeelingSad_saavn_radio_20201120115705_150x150.jpg"></a>
+					<div class="text-center">Feeling Sad</div>
+					<!-- <p class="text-center">Feeling Sad</p> -->
+				</span>
+				
+				<span>
+					<a href="#" class="station-icon"><img src="https://c.saavncdn.com/editorial/DesiIndieMagic_saavn_radio_20201126122910_150x150.jpg"></a>
+					<div class="text-center">Desi Indie Magic</div>
+					<!-- <p class="text-center">Desi Indie Magic</p> -->
+				</span>
+				
+				<span>
+					<a href="#" class="station-icon"><img src="https://c.saavncdn.com/editorial/It'sAParty_saavn_radio_20201012132125_150x150.jpg"></a>
+					<div class="text-center">It's A Party</div>
+					<!-- <p class="text-center">It's A Party</p> -->
+				</span>
+				
+				<span>
+					<a href="#" class="station-icon"><img src="https://c.saavncdn.com/editorial/Chill_saavn_radio_20201012131125_150x150.jpg"></a>
+					<div class="text-center">Chill</div>
+					<!-- <p class="text-center">Chill</p> -->
+				</span>
+				
+				<span>
+					<a href="#" class="station-icon"><img src="https://c.saavncdn.com/editorial/HappyTunes_saavn_radio_20201012131631_150x150.jpg" alt="Happy Tunes"></a>
+					<div class="text-center">Happy Tunes</div>
+					<!-- <p class="text-center">Happy Tunes</p> -->
+				</span>
+				
+				<span>
+					<a href="#" class="station-icon"><img src="https://c.saavncdn.com/editorial/SufiyanaSafar_saavn_radio_20201125121205_150x150.jpg"></a>
+					<div class="text-center">Sufiyana Safar</div>
+					<!-- <p class="text-center">Sufiyana Safar</p> -->
+				</span>
+				
+				<span>
+					<a href="#" class="station-icon"><img src="https://c.saavncdn.com/editorial/DrivetimeTunes_saavn_radio_20201012132016_150x150.jpg"></a>
+					<div class="text-center">Drivetime Tunes</div>
+					<!-- <p class="text-center">Drivetime Tunes</p> -->
+				</span>
+				
+				<span>
+					<a href="#" class="station-icon"><img src="https://c.saavncdn.com/editorial/90sNostalgia_saavn_radio_20201012131819_150x150.jpg"></a>
+					<div class="text-center">Sufi</div>
+					<!-- <p class="text-center">Sufi</p> -->
+				</span>
+				<span>
+					<a href="#" class="station-icon"><img src="https://c.saavncdn.com/editorial/MehfilEGhazal_saavn_radio_20201012131922_150x150.jpg"></a>
+					<div class="text-center">Mehfil E Ghazal</div>
+					<!-- <p class="text-center">Mehfil E Ghazal</p> -->
+				</span>
+
+			</span>
+
+		</section>
+
+		<section id="vibes-container">
+
+			<span id="vibe1" class="vibe">
+				<h2 class="text-center">Party</h2>
+			</span>
+
+			<span id="vibe2" class="vibe">
+				<h2 class="text-center">Electronic</h2>
+			</span>
+
+			<span id="vibe3" class="vibe">
+				<h2 class="text-center">Road Trip</h2>
+			</span>
+
+		</section>
+
+		<section class="trending">
+
+			<h4 style="margin-bottom:40px;">Trending Hindi</h4>
+
+			<div class="trending-container">
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/song/R7vKX66Wmr/vKX99k203m/size_m_1558696254.webp" class="trending-image">
+					<p>Bekhayali</p>
+				</div>
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/song/XzVWRyL3dq/VWRDaVNLKd/size_m_1566542675.webp" class="trending-image">
+					<p>Pachtaoge</p>
+				</div>
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/song/NOXWVgbkqL/XWVvAmzgWk/size_m_1551078085.webp" class="trending-image">
+					<p>Duniyaa</p>
+				</div>
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/albums/qa4WEqWP1p/a4WE0DX83P/size_m_1554479538.webp" class="trending-image">
+					<p>Vaaste</p>
+				</div>
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/song/Oxd3xP3gVY/d3xAXYnaWg/size_m_1563172659.webp" class="trending-image">
+					<p>O Saki Saki</p>
+				</div>
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/song/lJvKa63DV9/vKalNOlXbD/size_m_1549262875.jpg" class="trending-image">
+					<p>Coca Cola</p>
+				</div>
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/song/ZaP37RKDy7/P371NLRVbD/size_m_1559305408.webp" class="trending-image">
+					<p>Tujhe Kitna Chahne Lage</p>
+				</div>
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/song/6Zxb2r7b9w/xb2jvG6Gb9/size_m_1570080954.webp" class="trending-image">
+					<p>Tum Hi Aana</p>
+				</div>
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/song/jBr3gybR1m/r3gNMnyQKR/size_m_1577334328.webp" class="trending-image">
+					<p>Garmi</p>
+				</div>
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/albums/01A3mrWNQX/1A3mJkGnWN/size_m_1552901436.webp" class="trending-image">
+					<p>Ve Maahi</p>
+				</div>
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/song/zLp36PvbrG/p36VG07v3r/size_m_1547446909.webp" class="trending-image">
+					<p>Apna Time Aayega</p>
+				</div>
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/song/7rVW1Rbk56/VW1evp65Wk/size_m_1570445948.webp" class="trending-image">
+					<p>Shaitan Ka Saala</p>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="trending">
+
+			<h4 style="margin-bottom:40px;">Trending English</h4>
+
+			<div class="trending-container">
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/albums/0wrb4qNKLg/wrb4dDxLbL/size_m.jpg" class="trending-image">
+					<p>Shape of You</p>
+				</div>
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/albums/dwN39y83DP/wN39oV8bDP/size_m.jpg" class="trending-image">
+					<p>Love The Way You Lie</p>
+				</div>
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/albums/Dk9KNk23Bx/k9KNo1P63B/size_m.jpg" class="trending-image">
+					<p>See You Again</p>
+				</div>
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/albums/qaLKY23pO4/aLKYJ9zx3p/size_m.jpg" class="trending-image">
+					<p>Lean On</p>
+				</div>
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/albums/g4w3vr3jJB/4w3vm2GvKj/size_m.jpg" class="trending-image">
+					<p>Despacito</p>
+				</div>
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/albums/a7LWBaz3zX/7LWBJ0PWzX/size_m.jpg" class="trending-image">
+					<p>Rolling In The Deep</p>
+				</div>
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/albums/a7LWBzWzXA/7LWBrEvNWz/size_m.jpg" class="trending-image">
+					<p>Closer</p>
+				</div>
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/albums/Oxd3xzPbgV/xd3xvwn9bg/size_m.jpg" class="trending-image">
+					<p>Don't Let Me Down</p>
+				</div>
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/albums/jBr3gybR1m/Br3gnOrdKR/size_m.jpg" class="trending-image">
+					<p>Let Me Love You (Marshmello Remix)</p>
+				</div>
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/albums/qa4WEkqKP1/a4WEdkwq3P/size_m.jpg" class="trending-image">
+					<p>Kill Em With Kindness</p>
+				</div>
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/albums/9En3peWXDV/En3pVL2EbX/size_m.jpg" class="trending-image">
+					<p>Cheap Thrills</p>
+				</div>
+				<div>
+					<img src="https://a10.gaanacdn.com/gn_img/albums/VdNW0JMKo5/dNW0Y6abo5/size_m.jpg" class="trending-image">
+					<p>Moves Like Jagger</p>
+				</div>
+			</div>
+
+		</section>
+
+		<section id="queue-songs-responsive">
+
+			<h3 style="margin-bottom:20px;">Queue</h3>
+
+			<div class="queue-song">
+				<span class="queue-song-details">
+					<span class="queue-song-number">01</span>
+					<span class="queue-song-margin"><img src="https://a10.gaanacdn.com/gn_img/albums/01A3mrWNQX/1A3mJkGnWN/size_m_1552901436.webp" style="height:40px;display:inline-block;"></span>
+					<span class="queue-song-content">
+						<span class="queue-song-name">Ve Maahi</span>
+						<span class="queue-song-singer">Arijit Singh</span>    
+					</span>
+				</span>
+			
+				<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+			</div>
+
+			<div class="queue-song">
+				<span class="queue-song-details">
+					<span class="queue-song-number">02</span>
+					<span class="queue-song-margin"><img src="https://a10.gaanacdn.com/images/albums/35/35/crop_175x175_1490697013_35.jpg" style="height:40px;display:inline-block;"></span>
+					<span class="queue-song-content">
+						<span class="queue-song-name">Dil Chahta Hai</span>
+						<span class="queue-song-singer">Shankar Ehsan Loy</span>    
+					</span>
+				</span>
+			
+				<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+			</div>
+
+			<div class="queue-song">
+				<span class="queue-song-details">
+					<span class="queue-song-number">03</span>
+					<span class="queue-song-margin"><img src="https://a10.gaanacdn.com/gn_img/albums/koMWQ4B3qL/oMWQO5LXKq/size_m.jpg" style="height: 40px;display:inline-block;"></span>
+					<span class="queue-song-content">
+						<span class="queue-song-name">Channa Mereya</span>
+						<span class="queue-song-singer">Arijit Singh</span>    
+					</span>
+				</span>
+			
+				<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+			</div>
+
+			<div class="queue-song">
+				<span class="queue-song-details">
+					<span class="queue-song-number">04</span>
+					<span class="queue-song-margin"><img src="https://a10.gaanacdn.com/images/albums/23/1729123/crop_175x175_1729123.jpg" style="height: 40px;display:inline-block;"></span>
+					<span class="queue-song-content">
+						<span class="queue-song-name">Tere Sang Yaara</span>
+						<span class="queue-song-singer">Atif Aslam</span>    
+					</span>
+				</span>
+			
+				<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+			</div>
+
+			<div class="queue-song">
+				<span class="queue-song-details">
+					<span class="queue-song-number">05</span>
+					<span class="queue-song-margin"><img src="https://a10.gaanacdn.com/images/albums/60/60/crop_175x175_1490697102_60.jpg" style="height: 40px;display:inline-block;"></span>
+					<span class="queue-song-content">
+						<span class="queue-song-name">Tum Se Hi</span>
+						<span class="queue-song-singer">Mohit Chauhan</span>    
+					</span>
+				</span>
+			
+				<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+			</div>
+
+			<div class="queue-song">
+				<span class="queue-song-details">
+					<span class="queue-song-number">06</span>
+					<span class="queue-song-margin"><img src="https://a10.gaanacdn.com/images/albums/39/1726239/crop_175x175_1726239.jpg" style="height: 40px;display:inline-block;"></span>
+					<span class="queue-song-content">
+						<span class="queue-song-name">Teri Khair Mangdi</span>
+						<span class="queue-song-singer">Bilal Saeed</span>    
+					</span>
+				</span>
+			
+				<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+			</div>
+
+			<div class="queue-song">
+				<span class="queue-song-details">
+					<span class="queue-song-number">07</span>
+					<span class="queue-song-margin"><img src="https://a10.gaanacdn.com/images/albums/79/57279/crop_175x175_57279.jpg" style="height: 40px;display:inline-block;"></span>
+					<span class="queue-song-content">
+						<span class="queue-song-name">Tum Mile</span>
+						<span class="queue-song-singer">Neeraj Sridhar</span>    
+					</span>
+				</span>
+			
+				<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+			</div>
+
+			<div class="queue-song">
+				<span class="queue-song-details">
+					<span class="queue-song-number">08</span>
+					<span class="queue-song-margin"><img src="https://a10.gaanacdn.com/images/albums/81/22081/crop_175x175_22081.jpg" style="height: 40px;display:inline-block;"></span>
+					<span class="queue-song-content">
+						<span class="queue-song-name">Mere Bina</span>
+						<span class="queue-song-singer">Nikhil D' Souza</span>    
+					</span>
+				</span>
+			
+				<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+			</div>
+
+			<div class="queue-song">
+				<span class="queue-song-details">
+					<span class="queue-song-number">09</span>
+					<span class="queue-song-margin"><img src="https://a10.gaanacdn.com/images/albums/38/1728538/crop_175x175_1728538.jpg" style="height:40px;display:inline-block;"></span>
+					<span class="queue-song-content">
+						<span class="queue-song-name">Toota Jo Kabhi Tara</span>
+						<span class="queue-song-singer">Atif Aslam</span>  
+					</span>
+				</span>
+			
+				<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+			</div>
+
+			<div class="queue-song">
+				<span class="queue-song-details">
+					<span class="queue-song-number">10</span>
+					<span class="queue-song-margin"><img src="https://a10.gaanacdn.com/images/song/11/26974811/crop_175x175_1559305408.jpg" style="height:40px;display:inline-block;"></span>
+					<span class="queue-song-content">
+						<span class="queue-song-name">Tujhe Kitna Chahne Lage</span>
+						<span class="queue-song-singer">Arijit Singh</span>    
+					</span>
+				</span>
+			
+				<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+			</div>
+
+			<div class="queue-song">
+				<span class="queue-song-details">
+					<span class="queue-song-number">11</span>
+					<span class="queue-song-margin"><img title="Mitwa Song" alt="Mitwa Song" src="https://a10.gaanacdn.com/images/albums/26/2089926/crop_175x175_2089926.jpg" style="height:40px;display:inline-block;"></span>
+					<span class="queue-song-content">
+						<span class="queue-song-name">Mitwa</span>
+						<span class="queue-song-singer">Shankar Ehsaan Loy</span>    
+					</span>
+				</span>
+			
+				<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+			</div>
+
+			<div class="queue-song">
+				<span class="queue-song-details">
+					<span class="queue-song-number">12</span>
+					<span class="queue-song-margin"><img src="https://a10.gaanacdn.com/images/albums/77/1889777/crop_175x175_1496919109_1889777.jpg" style="height: 40px;display:inline-block;"></span>
+					<span class="queue-song-content">
+						<span class="queue-song-name">Ik Vaari Aa</span>
+						<span class="queue-song-singer">Arijit Singh</span>    
+					</span>
+				</span>
+			
+				<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+			</div>
+
+		</section>
+	</main>
+
+	<aside>
+		<h3 style="margin-bottom:20px;">Queue</h3>
+		
+		<div class="queue-song">
+			<span class="queue-song-details">
+				<span class="queue-song-number">01</span>
+				<span style="margin-right:8px"><img src="https://a10.gaanacdn.com/gn_img/albums/01A3mrWNQX/1A3mJkGnWN/size_m_1552901436.webp" style="height:40px;"></span>
+				<span class="queue-song-content">
+					<span class="queue-song-name">Ve Maahi</span>
+					<span class="queue-song-singer">Arijit Singh</span>    
+				</span>
+			</span>
+			
+			<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+		</div>
+
+		<div class="queue-song">
+			<span class="queue-song-details">
+				<span class="queue-song-number">02</span>
+				<span style="margin-right:8px"><img src="https://a10.gaanacdn.com/images/albums/35/35/crop_175x175_1490697013_35.jpg" style="height:40px;"></span>
+				<span class="queue-song-content">
+					<span class="queue-song-name">Dil Chahta Hai</span>
+					<span class="queue-song-singer">Shankar Ehsan Loy</span>    
+				</span>
+			</span>
+			
+			<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+		</div>
+
+		<div class="queue-song">
+			<span class="queue-song-details">
+				<span class="queue-song-number">03</span>
+				<span style="margin-right:8px"><img src="https://a10.gaanacdn.com/gn_img/albums/koMWQ4B3qL/oMWQO5LXKq/size_m.jpg" style="height:40px;"></span>
+				<span class="queue-song-content">
+					<span class="queue-song-name">Channa Mereya</span>
+					<span class="queue-song-singer">Arijit Singh</span>    
+				</span>
+			</span>
+			
+			<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+		</div>
+
+		<div class="queue-song">
+			<span class="queue-song-details">
+				<span class="queue-song-number">04</span>
+				<span style="margin-right:8px"><img src="https://a10.gaanacdn.com/images/albums/23/1729123/crop_175x175_1729123.jpg" style="height: 40px;"></span>
+				<span class="queue-song-content">
+					<span class="queue-song-name">Tere Sang Yaara</span>
+					<span class="queue-song-singer">Atif Aslam</span>    
+				</span>
+			</span>
+			
+			<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+		</div>
+
+		<div class="queue-song">
+			<span class="queue-song-details">
+				<span class="queue-song-number">05</span>
+				<span style="margin-right:8px"><img src="https://a10.gaanacdn.com/images/albums/60/60/crop_175x175_1490697102_60.jpg" style="height: 40px;"></span>
+				<span class="queue-song-content">
+					<span class="queue-song-name">Tum Se Hi</span>
+					<span class="queue-song-singer">Mohit Chauhan</span>    
+				</span>
+			</span>
+			
+			<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+		</div>
+
+		<div class="queue-song">
+			<span class="queue-song-details">
+				<span class="queue-song-number">06</span>
+				<span style="margin-right:8px"><img src="https://a10.gaanacdn.com/images/albums/39/1726239/crop_175x175_1726239.jpg" style="height: 40px;"></span>
+				<span class="queue-song-content">
+					<span class="queue-song-name">Teri Khair Mangdi</span>
+					<span class="queue-song-singer">Bilal Saeed</span>    
+				</span>
+			</span>
+			
+			<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+		</div>
+
+		<div class="queue-song">
+			<span class="queue-song-details">
+				<span class="queue-song-number">07</span>
+				<span style="margin-right:8px"><img src="https://a10.gaanacdn.com/images/albums/79/57279/crop_175x175_57279.jpg" style="height:40px;"></span>
+				<span class="queue-song-content">
+					<span class="queue-song-name">Tum Mile</span>
+					<span class="queue-song-singer">Neeraj Sridhar</span>    
+				</span>
+			</span>
+			
+			<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+		</div>
+
+		<div class="queue-song">
+			<span class="queue-song-details">
+				<span class="queue-song-number">08</span>
+				<span style="margin-right:8px"><img src="https://a10.gaanacdn.com/images/albums/81/22081/crop_175x175_22081.jpg" style="height:40px;"></span>
+				<span class="queue-song-content">
+					<span class="queue-song-name">Mere Bina</span>
+					<span class="queue-song-singer">Nikhil D' Souza</span>    
+				</span>
+			</span>
+			
+			<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+		</div>
+
+		<div class="queue-song">
+			<span class="queue-song-details">
+				<span class="queue-song-number">09</span>
+				<span style="margin-right:8px"><img src="https://a10.gaanacdn.com/images/albums/38/1728538/crop_175x175_1728538.jpg" style="height:40px;"></span>
+				<span class="queue-song-content">
+					<span class="queue-song-name">Toota Jo Kabhi Tara</span>
+					<span class="queue-song-singer">Atif Aslam</span>  
+				</span>
+			</span>
+			
+			<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+		</div>
+
+		<div class="queue-song">
+			<span class="queue-song-details">
+				<span class="queue-song-number">10</span>
+				<span style="margin-right:8px"><img src="https://a10.gaanacdn.com/images/song/11/26974811/crop_175x175_1559305408.jpg" style="height:40px;"></span>
+				<span class="queue-song-content">
+					<span class="queue-song-name">Tujhe Kitna Chahne Lage</span>
+					<span class="queue-song-singer">Arijit Singh</span>    
+				</span>
+			</span>
+			
+			<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+		</div>
+
+		<div class="queue-song">
+			<span class="queue-song-details">
+				<span class="queue-song-number">11</span>
+				<span style="margin-right:8px"><img title="Mitwa Song" alt="Mitwa Song" src="https://a10.gaanacdn.com/images/albums/26/2089926/crop_175x175_2089926.jpg" style="height:40px;"></span>
+				<span class="queue-song-content">
+					<span class="queue-song-name">Mitwa</span>
+					<span class="queue-song-singer">Shankar Ehsaan Loy</span>    
+				</span>
+			</span>
+			
+			<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+		</div>
+
+		<div class="queue-song">
+			<span class="queue-song-details">
+				<span class="queue-song-number">12</span>
+				<span style="margin-right:8px"><img src="https://a10.gaanacdn.com/images/albums/77/1889777/crop_175x175_1496919109_1889777.jpg" style="height:40px;"></span>
+				<span class="queue-song-content">
+					<span class="queue-song-name">Ik Vaari Aa</span>
+					<span class="queue-song-singer">Arijit Singh</span>    
+				</span>
+			</span>
+			
+			<a href="#"><i class="far fa-heart" style="margin-left:-100%" class="heart"></i></a>
+		</div>
+
+	</aside>
+
+	<footer id="music-playbar">
+
+		<div id="music-playbar-1">
+			
+			<img src="https://a10.gaanacdn.com/images/albums/78/78/crop_175x175_78.jpg" style="height: 80%;">
+			<span>
+				<div id="music-playbar-songname">Main Hoon Naa</div>
+				<div id="music-playbar-singer">Sonu Nigam</div>
+			</span>
+
+			<span><i class="far fa-heart" id="heart"></i></span>
+			<span><i class="fas fa-ban" id="ban"></i></span>
+		</div>	
+
+		<div id="music-playbar-2">
+			
+			<div id="buttons">
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-step-forward"></i>
+			</div>
+
+			<div class="timeline">
+				<span>0:00</span>
+				<input type="range">
+				<span>4:32</span>
+			</div>
+		</div>
+
+		<div id="music-playbar-3">
+			<input type="range">
+			<i class="fas fa-volume-up"></i>
+			<i class="fas fa-laptop"></i>
+			<i class="fas fa-list-ul"></i>
+		</div>
+
+	</footer>
+
+</body>
+</html>
